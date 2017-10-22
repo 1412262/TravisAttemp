@@ -36,7 +36,7 @@ describe('Pets', () => {
     /*
      * Test the /POST route
      */
-    describe('/POST pets', () => {
+    /*describe('/POST pets', () => {
         it('it should POST a pet', (done) => {
             let pet = {
                 name: "Bug",
@@ -69,7 +69,7 @@ describe('Pets', () => {
                     done();
                 });
         });
-    });
+    });*/
 
     /*
      * Test the /GET/:id route
@@ -119,7 +119,7 @@ describe('Pets', () => {
     /*
      * Test the /DELETE/:id route
      */
-    /*describe('/DELETE/:id pets', () => {
+    describe('/DELETE/:id pets', () => {
         it('it should DELETE a pet given the id', (done) => {
             // TODO add a model to db then get that id to take this test
             let id = 1;
@@ -134,5 +134,5 @@ describe('Pets', () => {
                     done();
                 });
         });
-    });*/
+    });
 });
