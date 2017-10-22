@@ -20,7 +20,7 @@ describe('Pets', () => {
     /*
      * Test the /GET route
      */
-    describe('/GET pets', () => {
+    /*describe('/GET pets', () => {
         it('it should GET all the pets', (done) => {
             chai.request(server)
                 .get('/pets')
@@ -31,7 +31,7 @@ describe('Pets', () => {
                     done();
                 });
         });
-    });
+    });*/
 
     /*
      * Test the /POST route
@@ -119,7 +119,7 @@ describe('Pets', () => {
     /*
      * Test the /DELETE/:id route
      */
-    describe('/DELETE/:id pets', () => {
+    /*describe('/DELETE/:id pets', () => {
         it('it should DELETE a pet given the id', (done) => {
             // TODO add a model to db then get that id to take this test
             let id = 1;
@@ -134,5 +134,5 @@ describe('Pets', () => {
                     done();
                 });
         });
-    });
+    });*/
 });
