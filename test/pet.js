@@ -74,7 +74,7 @@ describe('Pets', () => {
     /*
      * Test the /GET/:id route
      */
-    describe('/GET/:id pets', () => {
+   /* describe('/GET/:id pets', () => {
         it('it should GET a pet by the given id', (done) => {
             // TODO add a model to db then get that id to take this test
             let id = 1;
@@ -90,12 +90,12 @@ describe('Pets', () => {
                     done();
                 });
         });
-    });
+    });*/
 
     /*
      * Test the /PUT/:id route
      */
-    describe('/PUT/:id pets', () => {
+    /*describe('/PUT/:id pets', () => {
         it('it should UPDATE a pet given the id', (done) => {
             // TODO add a model to db then get that id to take this test
             let id = 1;
@@ -114,7 +114,7 @@ describe('Pets', () => {
                     done();
                 });
         });
-    });
+    });*/
 
     /*
      * Test the /DELETE/:id route
