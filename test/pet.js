@@ -20,18 +20,18 @@ describe('Pets', () => {
     /*
      * Test the /GET route
      */
-    /*describe('/GET pets', () => {
+    describe('/GET pets', () => {
         it('it should GET all the pets', (done) => {
             chai.request(server)
                 .get('/pets')
                 .end((err, res) => {
                     res.should.have.status(200);
                     res.body.should.be.a('array');
-                    res.body.length.should.be.eql(9); // fixme :)
+                    res.body.length.should.be.eql(8); // fixme :)
                     done();
                 });
         });
-    });*/
+    });
 
     /*
      * Test the /POST route
@@ -135,4 +135,5 @@ describe('Pets', () => {
                 });
         });
     });
+
 });
