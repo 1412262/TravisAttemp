@@ -37,6 +37,8 @@ app.route("/trees/:id")
     .get(tree.gettree)
     .delete(tree.deletetree)
     .put(tree.updatetree);
+app.route("/all")
+    .get(pet.getPets);
 app.listen(port);
 console.log("Listening on port " + port);
 
