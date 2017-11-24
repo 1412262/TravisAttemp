@@ -31,12 +31,12 @@ app.route("/pets/:id")
     .delete(pet.deletePet)
     .put(pet.updatePet);
 app.route("/trees")
-    .get(pet.getPets)
-    .post(pet.postPet);
+    .get(tree.gettrees)
+    .post(tree.posttree);
 app.route("/trees/:id")
-    .get(tree.getPet)
-    .delete(tree.deletePet)
-    .put(tree.updatePet);
+    .get(tree.gettree)
+    .delete(tree.deletetree)
+    .put(tree.updatetree);
 app.listen(port);
 console.log("Listening on port " + port);
 
