@@ -8,6 +8,7 @@ let bodyParser = require('body-parser');
 let port = process.env.PORT || 8080;
 let pet = require('./routes/pet');
 let tree = require('./routes/tree');
+let all = require('./routes/all');
 
 //don't show the log when it is test
 if(process.env.NODE_ENV !== 'test') {
@@ -38,7 +39,8 @@ app.route("/trees/:id")
     .delete(tree.deletetree)
     .put(tree.updatetree);
 app.route("/all")
-    .get(pet.getPets);
+    .get(all.getall);
+    
 app.listen(port);
 console.log("Listening on port " + port);
 
