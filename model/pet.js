@@ -20,7 +20,7 @@ let ListData = [
     {id: 9, name: 'Kitty09', status: 'available'}
 ];
 module.exports.find = (callback) => {
-    callback(null, ListData0);
+    callback(null, ListData );
 };
 module.exports.findById = (id, callback) => {
     callback(null, ListData.find(item => item.id == id)); // typeof id === "string"
