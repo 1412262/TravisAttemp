@@ -2,7 +2,7 @@ let all = require("../model/all");
 let Pet = require("../model/pet");
 let Tree = require("../model/tree");
 /*
- * GET /pets route to retrieve all the pets.
+ * GET all route to retrieve all.
  */
 let getall = (req, res) => {
 	var ps;
@@ -16,7 +16,7 @@ let getall = (req, res) => {
         	Tree.find((err,trees)=>{
         		ts = trees;
         		var all = ps.concat(ts);
-        		res.send(pets);
+        		res.send(all);
         	})
         }
         
