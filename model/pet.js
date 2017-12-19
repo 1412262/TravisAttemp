@@ -1,7 +1,7 @@
 /**
  * Created by hoangdv on 0028, Jun, 28, 2017.
  */
-let ListData0 = [
+let ListData2 = [
     {id: 1, name: 'Kitty01', status: 'available'},
     {id: 2, name: 'Kitty02', status: 'available'},
     {id: 3, name: 'Kitty03', status: 'available'},
@@ -20,7 +20,7 @@ let ListData = [
     {id: 9, name: 'Kitty09', status: 'available'}
 ];
 module.exports.find = (callback) => {
-    callback(null, ListData0);
+    callback(null, ListData2);
 };
 module.exports.findById = (id, callback) => {
     callback(null, ListData.find(item => item.id == id)); // typeof id === "string"
