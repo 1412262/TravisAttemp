@@ -16,7 +16,7 @@ let getall = (req, res) => {
         	Tree.find((err,trees)=>{
         		ts = trees;
         		var all = ps.concat(ts);
-        		res.send(ps);
+        		res.send(all);
         	})
         }
         
